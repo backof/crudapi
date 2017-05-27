@@ -4,10 +4,12 @@ phases:
   install:
     commands:
       - echo Installing... Running npm install
+      - npm install -g mocha
       - npm install
   pre_build:
     commands:
-      - echo Pre Build
+      - echo Pre Build installing unit.js
+      - npm install unit.js
   build:
     commands:
       - echo Build started on `date`
