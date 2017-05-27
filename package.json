@@ -1,0 +1,26 @@
+{
+  "name": "crudapi",
+  "version": "1.0.0",
+  "description": "crud api using hapi js and dynamodb",
+  "main": "index.js",
+   "scripts": {
+    "server": "nodemon ./server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backof/crudapi.git"
+  },
+  "author": "backof",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/backof/crudapi/issues"
+  },
+  "homepage": "https://github.com/backof/crudapi#readme",
+    "dependencies": {
+    "hapi": "^16.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
