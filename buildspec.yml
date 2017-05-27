@@ -3,20 +3,21 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing Mocha...
-      - npm install -g mocha
+      - echo Installing... Running npm install
+      - npm install
   pre_build:
     commands:
-      - echo Installing source NPM dependencies...
-      - npm install unit.js
+      - echo Pre Build
   build:
     commands:
       - echo Build started on `date`
-      - echo Compiling the Node.js code
-      - mocha server.js
+      - echo Testing code
+      - npm test
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - CRUDAPI.js
+    - '**/*''
+    
+    
